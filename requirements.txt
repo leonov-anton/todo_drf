@@ -1,0 +1,7 @@
+Django==3.2
+djangorestframework
+pytest
+pytest-django
+django-filter
+factory-boy
+django-debug-toolbar
