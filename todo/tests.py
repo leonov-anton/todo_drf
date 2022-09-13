@@ -66,6 +66,7 @@ class TestTaskList:
         response = api_client_with_credentials.get(f'{self.endpoint}?search={search}')
 
         assert response.status_code == 200
+        assert len(json.loads(response.content)) == 1
         assert json.loads(response.content)[0]['id'] == tasks[0].id
 
 
